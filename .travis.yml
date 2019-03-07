@@ -1,0 +1,12 @@
+env:
+  global:
+    - COMMIT=${TRAVIS_COMMIT::6}
+sudo: required
+services:
+- docker
+
+script:
+- if [ "$TRAVIS_BRANCH" = "master" -a "$TRAVIS_PULL_REQUEST" = "false" ]; then export REPO=openebs/workload-vendor;
+   docker login -u "$DOCKER_USER" -p "$DOCKER_PASS" && docker build -t $REPO:$COMMIT . && docker push $REPO; 
+  fi
+
