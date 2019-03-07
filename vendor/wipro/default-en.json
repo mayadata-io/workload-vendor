@@ -4,7 +4,7 @@
     "HOME": "Overview",
     "DASHBOARD": "Ci/E2E Dashboard",
     "WORKLOADS": "Workload Dashboard",
-    "ORGANISATION": "MayaData.Inc",
+    "ORGANISATION": "Wipro",
     "DASHBOARD-URL": "https://gitlab.com/geckovuser/app-catalogue/pipelines"
   },
   "WORKLOAD-DASHBOARD": {
